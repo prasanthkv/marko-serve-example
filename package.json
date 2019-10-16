@@ -1,0 +1,15 @@
+{
+  "name": "marko-serve-example",
+  "version": "1.0.0",
+  "devDependencies": {
+    "marko": "^4.18.15",
+    "marko-cli": "^7.0.21"
+  },
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "marko build ./src/pages",
+    "dev": "marko serve ./src/pages",
+    "start": "node ./build"
+  }
+}
