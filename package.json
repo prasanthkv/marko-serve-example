@@ -1,12 +1,29 @@
 {
-  "name": "marko-serve-example",
+  "name": "mock-ide",
   "version": "1.0.0",
-  "devDependencies": {
-    "marko": "^4.18.15",
-    "marko-cli": "^7.0.21"
-  },
   "main": "index.js",
   "private": true,
+  "dependencies": {
+    "@ebay/skin": "^9.3.0",
+    "monaco-editor": "^0.18.1"
+  },
+  "devDependencies": {
+    "@marko/webpack": "^2.0.0",
+    "marko": "^4.18.15",
+    "marko-cli": "^7.0.21",
+    "marko-widgets": "^7.0.1",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4",
+    "style-loader": "^1.0.0",
+    "less": "^3.10.3",
+    "less-loader": "^5",
+    "monaco-editor-webpack-plugin": "^1.7.0",
+    "webpack": "^4.41.2"
+  },
+  "peerDependencies": {
+    "marko": "^4",
+    "marko-widgets": "^7"
+  },
   "scripts": {
     "build": "marko build ./src/pages",
     "dev": "marko serve ./src/pages",
